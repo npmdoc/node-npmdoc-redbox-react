@@ -1,0 +1,688 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/commissure/redbox-react">redbox-react (v1.3.6)</a>
+</h1>
+<h4>A redbox (rsod) component to display your errors.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.redbox-react">module redbox-react</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.RedBoxError">
+            function <span class="apidocSignatureSpan">redbox-react.</span>RedBoxError
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.__GetDependency__">
+            function <span class="apidocSignatureSpan">redbox-react.</span>__GetDependency__
+            <span class="apidocSignatureSpan">(variableName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.__ResetDependency__">
+            function <span class="apidocSignatureSpan">redbox-react.</span>__ResetDependency__
+            <span class="apidocSignatureSpan">(variableName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.__Rewire__">
+            function <span class="apidocSignatureSpan">redbox-react.</span>__Rewire__
+            <span class="apidocSignatureSpan">(variableName, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.__get__">
+            function <span class="apidocSignatureSpan">redbox-react.</span>__get__
+            <span class="apidocSignatureSpan">(variableName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.__set__">
+            function <span class="apidocSignatureSpan">redbox-react.</span>__set__
+            <span class="apidocSignatureSpan">(variableName, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.default">
+            function <span class="apidocSignatureSpan">redbox-react.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">redbox-react.</span>__RewireAPI__</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">redbox-react.</span>js</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.redbox-react.js">module redbox-react.js</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.__GetDependency__">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>__GetDependency__
+            <span class="apidocSignatureSpan">(variableName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.__ResetDependency__">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>__ResetDependency__
+            <span class="apidocSignatureSpan">(variableName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.__Rewire__">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>__Rewire__
+            <span class="apidocSignatureSpan">(variableName, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.__get__">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>__get__
+            <span class="apidocSignatureSpan">(variableName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.__set__">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>__set__
+            <span class="apidocSignatureSpan">(variableName, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.filenameHasLoaders">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>filenameHasLoaders
+            <span class="apidocSignatureSpan">(filename)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.filenameHasSchema">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>filenameHasSchema
+            <span class="apidocSignatureSpan">(filename)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.filenameWithoutLoaders">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>filenameWithoutLoaders
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.isFilenameAbsolute">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>isFilenameAbsolute
+            <span class="apidocSignatureSpan">(filename)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.makeLinkText">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>makeLinkText
+            <span class="apidocSignatureSpan">(filename, line, column)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.redbox-react.js.makeUrl">
+            function <span class="apidocSignatureSpan">redbox-react.js.</span>makeUrl
+            <span class="apidocSignatureSpan">(filename, scheme, line, column)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">redbox-react.js.</span>__RewireAPI__</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">redbox-react.js.</span>default</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.redbox-react" id="apidoc.module.redbox-react">module redbox-react</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.RedBoxError" id="apidoc.element.redbox-react.RedBoxError">
+        function <span class="apidocSignatureSpan">redbox-react.</span>RedBoxError
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RedBoxError() {
+  _classCallCheck(this, RedBoxError);
+
+  return _possibleConstructorReturn(this, (RedBoxError.__proto__ || Object.getPrototypeOf(RedBoxError)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.__GetDependency__" id="apidoc.element.redbox-react.__GetDependency__">
+        function <span class="apidocSignatureSpan">redbox-react.</span>__GetDependency__
+        <span class="apidocSignatureSpan">(variableName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _get__(variableName) {
+  if (_RewiredData__ === undefined || _RewiredData__[variableName] === undefined) {
+    return _get_original__(variableName);
+  } else {
+    var value = _RewiredData__[variableName];
+
+    if (value === INTENTIONAL_UNDEFINED) {
+      return undefined;
+    } else {
+      return value;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.__ResetDependency__" id="apidoc.element.redbox-react.__ResetDependency__">
+        function <span class="apidocSignatureSpan">redbox-react.</span>__ResetDependency__
+        <span class="apidocSignatureSpan">(variableName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _reset__(variableName) {
+  delete _RewiredData__[variableName];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.__Rewire__" id="apidoc.element.redbox-react.__Rewire__">
+        function <span class="apidocSignatureSpan">redbox-react.</span>__Rewire__
+        <span class="apidocSignatureSpan">(variableName, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _set__(variableName, value) {
+  if ((typeof variableName === 'undefined' ? 'undefined' : _typeof(variableName)) === 'object') {
+    Object.keys(variableName).forEach(function (name) {
+      _RewiredData__[name] = variableName[name];
+    });
+  } else {
+    if (value === undefined) {
+      _RewiredData__[variableName] = INTENTIONAL_UNDEFINED;
+    } else {
+      _RewiredData__[variableName] = value;
+    }
+
+    return function () {
+      _reset__(variableName);
+    };
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.__get__" id="apidoc.element.redbox-react.__get__">
+        function <span class="apidocSignatureSpan">redbox-react.</span>__get__
+        <span class="apidocSignatureSpan">(variableName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _get__(variableName) {
+  if (_RewiredData__ === undefined || _RewiredData__[variableName] === undefined) {
+    return _get_original__(variableName);
+  } else {
+    var value = _RewiredData__[variableName];
+
+    if (value === INTENTIONAL_UNDEFINED) {
+      return undefined;
+    } else {
+      return value;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.__set__" id="apidoc.element.redbox-react.__set__">
+        function <span class="apidocSignatureSpan">redbox-react.</span>__set__
+        <span class="apidocSignatureSpan">(variableName, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _set__(variableName, value) {
+  if ((typeof variableName === 'undefined' ? 'undefined' : _typeof(variableName)) === 'object') {
+    Object.keys(variableName).forEach(function (name) {
+      _RewiredData__[name] = variableName[name];
+    });
+  } else {
+    if (value === undefined) {
+      _RewiredData__[variableName] = INTENTIONAL_UNDEFINED;
+    } else {
+      _RewiredData__[variableName] = value;
+    }
+
+    return function () {
+      _reset__(variableName);
+    };
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.default" id="apidoc.element.redbox-react.default">
+        function <span class="apidocSignatureSpan">redbox-react.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RedBox() {
+  _classCallCheck(this, RedBox);
+
+  return _possibleConstructorReturn(this, (RedBox.__proto__ || Object.getPrototypeOf(RedBox)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.redbox-react.js" id="apidoc.module.redbox-react.js">module redbox-react.js</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.__GetDependency__" id="apidoc.element.redbox-react.js.__GetDependency__">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>__GetDependency__
+        <span class="apidocSignatureSpan">(variableName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _get__(variableName) {
+  if (_RewiredData__ === undefined || _RewiredData__[variableName] === undefined) {
+    return _get_original__(variableName);
+  } else {
+    var value = _RewiredData__[variableName];
+
+    if (value === INTENTIONAL_UNDEFINED) {
+      return undefined;
+    } else {
+      return value;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.__ResetDependency__" id="apidoc.element.redbox-react.js.__ResetDependency__">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>__ResetDependency__
+        <span class="apidocSignatureSpan">(variableName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _reset__(variableName) {
+  delete _RewiredData__[variableName];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.__Rewire__" id="apidoc.element.redbox-react.js.__Rewire__">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>__Rewire__
+        <span class="apidocSignatureSpan">(variableName, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _set__(variableName, value) {
+  if ((typeof variableName === 'undefined' ? 'undefined' : _typeof(variableName)) === 'object') {
+    Object.keys(variableName).forEach(function (name) {
+      _RewiredData__[name] = variableName[name];
+    });
+  } else {
+    if (value === undefined) {
+      _RewiredData__[variableName] = INTENTIONAL_UNDEFINED;
+    } else {
+      _RewiredData__[variableName] = value;
+    }
+
+    return function () {
+      _reset__(variableName);
+    };
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.__get__" id="apidoc.element.redbox-react.js.__get__">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>__get__
+        <span class="apidocSignatureSpan">(variableName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _get__(variableName) {
+  if (_RewiredData__ === undefined || _RewiredData__[variableName] === undefined) {
+    return _get_original__(variableName);
+  } else {
+    var value = _RewiredData__[variableName];
+
+    if (value === INTENTIONAL_UNDEFINED) {
+      return undefined;
+    } else {
+      return value;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.__set__" id="apidoc.element.redbox-react.js.__set__">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>__set__
+        <span class="apidocSignatureSpan">(variableName, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _set__(variableName, value) {
+  if ((typeof variableName === 'undefined' ? 'undefined' : _typeof(variableName)) === 'object') {
+    Object.keys(variableName).forEach(function (name) {
+      _RewiredData__[name] = variableName[name];
+    });
+  } else {
+    if (value === undefined) {
+      _RewiredData__[variableName] = INTENTIONAL_UNDEFINED;
+    } else {
+      _RewiredData__[variableName] = value;
+    }
+
+    return function () {
+      _reset__(variableName);
+    };
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.filenameHasLoaders" id="apidoc.element.redbox-react.js.filenameHasLoaders">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>filenameHasLoaders
+        <span class="apidocSignatureSpan">(filename)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function filenameHasLoaders(filename) {
+  var actualFilename = _get__('filenameWithoutLoaders')(filename);
+
+  return actualFilename !== filename;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.filenameHasSchema" id="apidoc.element.redbox-react.js.filenameHasSchema">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>filenameHasSchema
+        <span class="apidocSignatureSpan">(filename)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function filenameHasSchema(filename) {
+  return (/^[\w]+\:/.test(filename)
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.filenameWithoutLoaders" id="apidoc.element.redbox-react.js.filenameWithoutLoaders">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>filenameWithoutLoaders
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function filenameWithoutLoaders() {
+  var filename = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : '';
+
+  var index = filename.lastIndexOf('!');
+
+  return index &lt; 0 ? filename : filename.substr(index + 1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.isFilenameAbsolute" id="apidoc.element.redbox-react.js.isFilenameAbsolute">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>isFilenameAbsolute
+        <span class="apidocSignatureSpan">(filename)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFilenameAbsolute(filename) {
+  var actualFilename = _get__('filenameWithoutLoaders')(filename);
+
+  if (actualFilename.indexOf('/') === 0) {
+    return true;
+  }
+
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.makeLinkText" id="apidoc.element.redbox-react.js.makeLinkText">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>makeLinkText
+        <span class="apidocSignatureSpan">(filename, line, column)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function makeLinkText(filename, line, column) {
+  var text = _get__('filenameWithoutLoaders')(filename);
+
+  if (line &amp;&amp; text === filename) {
+    text = text + ':' + line;
+
+    if (column) {
+      text = text + ':' + column;
+    }
+  }
+
+  return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.redbox-react.js.makeUrl" id="apidoc.element.redbox-react.js.makeUrl">
+        function <span class="apidocSignatureSpan">redbox-react.js.</span>makeUrl
+        <span class="apidocSignatureSpan">(filename, scheme, line, column)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function makeUrl(filename, scheme, line, column) {
+  var actualFilename = _get__('filenameWithoutLoaders')(filename);
+
+  if (_get__('filenameHasSchema')(filename)) {
+    return actualFilename;
+  }
+
+  var url = 'file://' + actualFilename;
+
+  if (scheme) {
+    url = scheme + '://open?url=' + url;
+
+    if (line &amp;&amp; actualFilename === filename) {
+      url = url + '&amp;line=' + line;
+
+      if (column) {
+        url = url + '&amp;column=' + column;
+      }
+    }
+  }
+
+  return url;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
